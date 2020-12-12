@@ -1,2 +1,5 @@
-cypress
+# Node Modules
 node_modules
+
+# Username / password
+credentials.ts
