@@ -1,5 +1,7 @@
 # Sunny Portal CSV Downloader
 
+This project is work in progress!
+
 ## Prerequisites
 
 * Install NodeJS v12 or later
@@ -22,4 +24,6 @@ Please set your SMA credentials in the file credentials.original.ts and rename t
 
 MIT License
 
-Copyright (c) 2020 Thorsten Rinne
+Copyright © 2020 Thorsten Rinne
+
+Made with ❤️ and ☕️
