@@ -1,5 +1,12 @@
 # Node Modules
 node_modules
 
+# Unused Cypress stuff
+cypress/fixtures
+cypress/plugins
+cypress/screenshots
+cypress/support
+cypress/videos
+
 # Username / password
 credentials.ts

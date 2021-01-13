@@ -32,7 +32,7 @@ describe('Visit ennexos.sunnyportal.com', () => {
     cy.get('button.btn.ennexos-button').click();
 
     // Confirm download
-    cy.get('button.btn.ennexos-button-blue').contains('Jetzt downloaden').click();
+    cy.get('button.btn.ennexos-button-blue').click();
 
     // Logout
     cy.get('#current-user-dropdown-menu').click();
