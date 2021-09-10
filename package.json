@@ -4,8 +4,8 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "cypress": "cypress run",
-        "cypress:gui": "cypress open",
+        "cypress": "./node_modules/.bin/cypress run",
+        "cypress:gui": "./node_modules/.bin/cypress open",
         "prettier": "prettier --write ."
     },
     "repository": {

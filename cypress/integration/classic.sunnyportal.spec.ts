@@ -7,6 +7,8 @@ describe('Visit www.sunnyportal.com', () => {
 
   beforeEach(() => {
     cy.visit('https://www.sunnyportal.com');
+
+    cy.handleCookieBanner();
   });
 
   it('redirects to /dashboard on success', () => {
