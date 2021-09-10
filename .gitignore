@@ -5,8 +5,10 @@ node_modules
 cypress/fixtures
 cypress/plugins
 cypress/screenshots
-cypress/support
 cypress/videos
 
 # Username / password
 credentials.ts
+
+# ide
+.idea
