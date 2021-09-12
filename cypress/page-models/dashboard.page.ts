@@ -2,7 +2,7 @@ import { NavigationModel } from './navigation.model';
 
 export class DashboardPage {
 
-  constructor(private plantId: string) {}
+  constructor(private plantId: number) {}
 
   public navigate(navigation: NavigationModel): void {
     navigation.navigateTo(this.plantId);

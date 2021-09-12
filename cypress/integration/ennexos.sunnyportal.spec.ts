@@ -9,7 +9,7 @@ import { LoginPage } from '../page-models/login.page';
 describe('Visit ennexos.sunnyportal.com', () => {
   const username = SMA_USERNAME;
   const password = SMA_PASSWORD;
-  const plantIds = SMA_PLANT_ID;
+  const plantIdOrArray = SMA_PLANT_ID;
 
   beforeEach(() => {
     cy.visit(Cypress.env('BASE_URL'));
@@ -21,21 +21,20 @@ describe('Visit ennexos.sunnyportal.com', () => {
     // Login
     cy.url().should('include', '/login');
 
-    new LoginPage().login({username, password});
+    new LoginPage().login({ username, password });
 
     cy.url().should('include', '/dashboard');
 
-    const isMultiPlant = plantIds.includes(',');
     const nav = new NavigationModel();
 
-    if (isMultiPlant) {
-      plantIds.split(',').forEach((plantId) => {
+    if (Array.isArray(plantIdOrArray)) {
+      plantIdOrArray.forEach((plantId) => {
         const dashboard = new DashboardPage(plantId);
         dashboard.navigate(nav);
         new EnergyBalancePage().downloadCsv();
       });
     } else {
-      const dashboard = new DashboardPage(plantIds);
+      const dashboard = new DashboardPage(plantIdOrArray);
       dashboard.navigate(nav);
       new EnergyBalancePage().downloadCsv();
     }
