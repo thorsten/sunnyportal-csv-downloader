@@ -19,7 +19,7 @@ declare namespace Cypress {
 }
 //
 // -- This is a parent command --
-Cypress.Commands.add("testId", (id) => { cy.get(`[data-testid="${id}"]`) })
+Cypress.Commands.add("testId", (id) => cy.get(`[data-testid="${id}"]`))
 //
 //
 // -- This is a child command --

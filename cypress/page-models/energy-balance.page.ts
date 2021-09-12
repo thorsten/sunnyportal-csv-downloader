@@ -7,7 +7,7 @@ export class EnergyBalancePage {
     cy.get('button.btn.ennexos-button').trigger('click');
 
     // Confirm download
-    cy.get('button.btn.ennexos-button-blue').trigger('click');
+    cy.get('button.btn.ennexos-button-blue').click();
   }
 
 }

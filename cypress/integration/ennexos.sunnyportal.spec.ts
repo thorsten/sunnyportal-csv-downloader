@@ -39,8 +39,9 @@ describe('Visit ennexos.sunnyportal.com', () => {
       new EnergyBalancePage().downloadCsv();
     }
 
+
     // Logout
-    cy.get('#current-user-dropdown-menu').trigger('click');
-    cy.get('button.sma-logout').trigger('click');
+    cy.testId('current-user-dropdown-menu').click();
+    cy.testId('sma-logout').click();
   });
 });
