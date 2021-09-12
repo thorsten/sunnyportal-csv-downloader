@@ -1,5 +1,6 @@
 {
   "env": {
-    "BASE_URL": "https://ennexos.sunnyportal.com/"
+    "BASE_URL": "https://ennexos.sunnyportal.com/",
+    "COOKIE_BANNER": "#onetrust-accept-btn-handler"
   }
 }

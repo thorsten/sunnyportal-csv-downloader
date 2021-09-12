@@ -14,7 +14,7 @@ describe('Visit ennexos.sunnyportal.com', () => {
   beforeEach(() => {
     cy.visit(Cypress.env('BASE_URL'));
 
-    cy.get('#onetrust-accept-btn-handler').then((btn) => btn.trigger('click'));
+    cy.handleCookieBanner();
   });
 
   it('redirects to /dashboard on success', () => {
