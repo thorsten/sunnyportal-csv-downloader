@@ -10,3 +10,6 @@ cypress/videos
 
 # Username / password
 credentials.ts
+
+# IntelliJ
+.idea
