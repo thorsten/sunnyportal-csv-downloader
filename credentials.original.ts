@@ -5,4 +5,4 @@
 
 export const SMA_USERNAME = 'you@example.com';
 export const SMA_PASSWORD = 'your-password';
-export const SMA_PLANT_ID = 123456789;
+export const SMA_PLANT_ID: number | number[] = 123456789;
