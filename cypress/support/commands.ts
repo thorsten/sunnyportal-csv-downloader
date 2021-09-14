@@ -15,11 +15,17 @@ declare namespace Cypress {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   interface Chainable<Subject> {
     testId(id: string): Chainable<Element>;
+    handleCookieBanner(): void;
   }
 }
 //
 // -- This is a parent command --
-Cypress.Commands.add("testId", (id) => cy.get(`[data-testid="${id}"]`))
+Cypress.Commands.add("testId", (id) => cy.get(`[data-testid="${id}"]`));
+
+Cypress.Commands.add("handleCookieBanner", () => {
+  cy.get(Cypress.env('COOKIE_BANNER'))
+    .then((btn) => btn.trigger('click'));
+});
 //
 //
 // -- This is a child command --

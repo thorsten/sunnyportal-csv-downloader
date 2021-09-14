@@ -4,8 +4,8 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "cypress": "cypress run",
-        "cypress:gui": "cypress open",
+        "cypress": "./node_modules/.bin/cypress run",
+        "cypress:gui": "./node_modules/.bin/cypress open",
         "prettier": "prettier --write ."
     },
     "repository": {
@@ -19,8 +19,8 @@
     },
     "homepage": "https://github.com/thorsten/sunnyportal-csv-downloader#readme",
     "devDependencies": {
-        "cypress": "^6.2.1",
-        "prettier": "^2.2.1",
-        "typescript": "^4.1.3"
+        "cypress": "^8.3.1",
+        "prettier": "^2.4.0",
+        "typescript": "^4.4.3"
     }
 }
