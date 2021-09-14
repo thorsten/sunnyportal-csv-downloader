@@ -1,1 +1,7 @@
-{}
+{
+  "env": {
+    "BASE_URL": "https://ennexos.sunnyportal.com/",
+    "COOKIE_BANNER": "#onetrust-accept-btn-handler"
+  },
+  "supportFile": "cypress/support/index.ts"
+}
