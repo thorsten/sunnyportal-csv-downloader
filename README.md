@@ -1,6 +1,6 @@
 # Sunny Portal CSV Downloader
 
-This project is work in progress!
+Note: The login won't work anymore due to the switch to SMA ID.
 
 Currently, it downloads the CSV for the current day for the 
 [SMA Sunny Portal powered by ennexOS](https://ennexos.sunnyportal.com).
